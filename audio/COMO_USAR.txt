@@ -1,0 +1,1 @@
+Coloque seu arquivo de audio aqui com o nome musica.mp3 (ex: d:\site\audio\musica.mp3)
