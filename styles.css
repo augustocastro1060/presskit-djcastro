@@ -368,8 +368,37 @@ img {
   transition: transform 0.6s ease;
 }
 
+/* Enquadramento perfeito de fotos verticais sem cortar e sem alterar o tamanho do container */
+.about__image--contain {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-color: var(--bg-card);
+}
+
+.about__image--contain::before {
+  content: '';
+  position: absolute;
+  inset: -10px;
+  background: inherit;
+  filter: blur(25px) brightness(0.3);
+  transform: scale(1.2);
+  z-index: 0;
+}
+
+.about__image--contain img {
+  position: relative;
+  z-index: 1;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.6));
+}
+
 .about__card:hover .about__image img {
   transform: scale(1.06);
+}
+
+.about__card:hover .about__image--contain img {
+  transform: scale(1.04);
 }
 
 .about__tag {
