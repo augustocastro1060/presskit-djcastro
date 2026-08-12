@@ -523,6 +523,36 @@ img {
   font-size: 1rem;
 }
 
+/* ===== DOWNLOAD BUTTON ===== */
+.download-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  width: 100%;
+  padding: 14px 20px;
+  margin-top: 1.5rem;
+  background: var(--accent);
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  border: 1px solid var(--accent);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px var(--accent-glow);
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  background: var(--accent-dark);
+  border-color: var(--accent-dark);
+  box-shadow: 0 6px 25px rgba(230, 57, 70, 0.5);
+  transform: translateY(-2px);
+  color: #ffffff;
+}
+
 /* ===== CTA BOX ===== */
 .cta-box {
   margin-top: 2rem;
